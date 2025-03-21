@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class loja {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in); // declaracao de scanner para leitura
         int produto, quantidade; // declaracao de variavel
@@ -21,7 +21,7 @@ public class Main {
         valorTotal = quantidade * valor; // operacao para valor da compra total
         if (valorTotal <= 250 ) { // condicional sobre o total do desconto
             desconto = 0.05;
-        } else if (valorTotal >= 251 && desconto <= 500) {
+        } else if (valorTotal >= 251 && valorTotal <= 500) {
             desconto = 0.1;
         } else if (valorTotal > 500 ) {
             desconto = 0.15;
