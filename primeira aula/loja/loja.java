@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class loja {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in); // declaracao de scanner para leitura
@@ -32,5 +31,6 @@ public class loja {
         System.out.printf("Valor bruto: R$ %.2f\n", valorTotal);
         System.out.printf("Desconto aplicado: R$ %.2f\n", valorDoDesconto);
         System.out.printf("Valor final a pagar: R$ %.2f\n", valorComDesconto);
+        entrada.close(); // fechamento do scanner
     }
 }
