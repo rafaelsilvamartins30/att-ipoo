@@ -22,10 +22,13 @@ public class Animal {
         if (this == obj) {
             return true;
         } else if(!(obj instanceof Animal)) {
+        // } else if (obj == null || getClass() != obj.getClass()){ caso o objeto seja nulo ou não seja da mesma classe
+            return false;
+        } else if(obj == null || getClass() != obj.getClass()){
             return false;
         } else{
             Animal outro = (Animal) obj;   
-            return nome.equals(outro.nome);
+            return especie.equals(outro.especie);
         }
     }
     @Override

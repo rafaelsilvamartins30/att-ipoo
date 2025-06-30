@@ -1,7 +1,7 @@
 public class Gato extends Animal {
     private boolean gostaDeCaixa;
-    public Gato(String name, String fala, boolean gostaDeCaixa) {
-        super(name, fala);
+    public Gato(String name, String especie, boolean gostaDeCaixa) {
+        super(name, especie);
         this.gostaDeCaixa = gostaDeCaixa;
     }
     public boolean isGostaDeCaixa() {
